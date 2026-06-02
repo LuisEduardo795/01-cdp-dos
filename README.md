@@ -13,6 +13,22 @@ entradas falsas, agotando la memoria del dispositivo.
 Generar paquetes CDP maliciosos con Device-IDs aleatorios para
 saturar la tabla de vecinos CDP del switch víctima.
 
+### Parámetros
+
+| Parámetro | Descripción | Default |
+|-----------|-------------|---------|
+| `-i` | Interfaz de red (ej: eth0) | Obligatorio |
+| `-c` | Cantidad de paquetes (0=infinito) | 1000 |
+| `-d` | Delay entre paquetes en segundos | 0.01 |
+| `-v` | Modo verbose | False |
+
+### Requisitos
+- Sistema operativo: Kali Linux / Ubuntu
+- Python 3.8+
+- Scapy: `pip3 install scapy`
+- Privilegios root
+
+---
 
 ## Funcionamiento del Script
 
