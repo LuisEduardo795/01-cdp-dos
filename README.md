@@ -28,6 +28,16 @@ saturar la tabla de vecinos CDP del switch víctima.
 - Scapy: `pip3 install scapy`
 - Privilegios root
 
+## Topologia de red
+<img width="512" height="356" alt="image" src="https://github.com/user-attachments/assets/9526e1e3-e05f-445b-a487-f4b6c68c2e6b" />
+
+
+| Dispositivo | Interfaz | IP |
+|---|---|---|
+| Ubuntu-Atacante | ens3 | 192.168.67.50/24 |
+| SW-Core | e0/0 - e0/1 | — |
+| Linux-Victima | ens3 | 192.168.67.60/24 |
+
 ---
 
 ## Funcionamiento del Script
