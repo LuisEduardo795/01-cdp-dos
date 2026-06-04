@@ -17,7 +17,7 @@ saturar la tabla de vecinos CDP del switch víctima.
 
 | Parámetro | Descripción | Default |
 |-----------|-------------|---------|
-| `-i` | Interfaz de red (ej: eth0) | Obligatorio |
+| `-i` | Interfaz de red (ej: ens3) | Obligatorio |
 | `-c` | Cantidad de paquetes (0=infinito) | 1000 |
 | `-d` | Delay entre paquetes en segundos | 0.01 |
 | `-v` | Modo verbose | False |
@@ -44,13 +44,13 @@ saturar la tabla de vecinos CDP del switch víctima.
 
 ```bash
 # Ataque básico
-sudo python3 cdp_dos.py -i eth0
+sudo python3 cdp_dos.py -i ens3
 
 # Enviar 5000 paquetes con verbose
-sudo python3 cdp_dos.py -i eth0 -c 5000 -v
+sudo python3 cdp_dos.py -i ens3 -c 5000 -v
 
 # Ataque continuo sin límite
-sudo python3 cdp_dos.py -i eth0 -c 0 -d 0.005
+sudo python3 cdp_dos.py -i ens3 -c 0 -d 0.005
 ```
 
 
