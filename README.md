@@ -81,3 +81,8 @@ interface GigabitEthernet0/1
 ```cisco
 show cdp neighbors
 show cdp interface
+```
+
+## Video demostrativo 
+https://youtu.be/T8mbxwYeMqI
+
